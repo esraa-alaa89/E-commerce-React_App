@@ -8,7 +8,6 @@ import Slider from "react-slick";
 import { Sidebar } from "flowbite-react";
 import { HiDesktopComputer, HiOutlineUserGroup, HiInbox, HiShoppingBag, HiUser } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import CategoriesBarStyle from './CategoriesBar.module.css';
 
 export default function CategoriesBar() {
     // slider-settings
@@ -26,7 +25,7 @@ export default function CategoriesBar() {
 
     return <>
 
-        <section className='sideBar pt-5'>
+        <section className='sideBar pt-lg-5'>
             <div className="container ms-0 ps-0">
                 <div className="row">
                     {/* sidebar  */}
