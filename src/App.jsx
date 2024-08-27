@@ -20,26 +20,26 @@ import Profile from './Components/Profile/Profile';
 import Checkout from './Components/Checkout/Checkout';
 
 let router= createBrowserRouter([
-  {path:'/', element:<Layout/>,  
+  {path:'', element:<Layout/>,  
     children:[    
-      // {path:'/', element:<ProtectedRoute><Home/></ProtectedRoute>},
-      {path:'/home', element:<ProtectedRoute><Home/></ProtectedRoute>},
-      {path:'/productDetails/:id/:category', element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
-      {path:'/viewAllProducts/:limit/:skip', element:<ProtectedRoute><AllProductsPage/></ProtectedRoute>},
-      {path:'/categories/:categoryName', element:<ProtectedRoute><CategoryData/></ProtectedRoute>},
-      {path:'/cart', element:<ProtectedRoute><Cart/></ProtectedRoute>},
-      {path:'/wishlist', element:<ProtectedRoute><WishList/></ProtectedRoute>},
-      {path:'/checkout', element:<ProtectedRoute><Checkout/></ProtectedRoute>},
-      {path:'/contact', element:<ProtectedRoute><Contact/></ProtectedRoute>},
-      {path:'/about', element:<ProtectedRoute><About/></ProtectedRoute>},
-      {path:'/profile', element:<ProtectedRoute><Profile/></ProtectedRoute>},
-      {path:'/signup', element:<SignUp/>},
-      {path:'/login', element:<Login/>},
+      {path:'', element:<ProtectedRoute><Home/></ProtectedRoute>},
+      {path:'home', element:<ProtectedRoute><Home/></ProtectedRoute>},
+      {path:'productDetails/:id/:category', element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
+      {path:'viewAllProducts/:limit/:skip', element:<ProtectedRoute><AllProductsPage/></ProtectedRoute>},
+      {path:'categories/:categoryName', element:<ProtectedRoute><CategoryData/></ProtectedRoute>},
+      {path:'cart', element:<ProtectedRoute><Cart/></ProtectedRoute>},
+      {path:'wishlist', element:<ProtectedRoute><WishList/></ProtectedRoute>},
+      {path:'checkout', element:<ProtectedRoute><Checkout/></ProtectedRoute>},
+      {path:'contact', element:<ProtectedRoute><Contact/></ProtectedRoute>},
+      {path:'about', element:<ProtectedRoute><About/></ProtectedRoute>},
+      {path:'profile', element:<ProtectedRoute><Profile/></ProtectedRoute>},
+      {path:'signup', element:<SignUp/>},
+      {path:'login', element:<Login/>},
       {path:'*', element:<NotFound/>},
     ]
   }
 ], {
-  basename: "/E-commerce-React_App"
+  basename: "/E-commerce-React_App/"
 })
 
 function App() {

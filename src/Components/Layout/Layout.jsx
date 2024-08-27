@@ -9,7 +9,7 @@ export default function Layout() {
     <Navbar/>
     <div className="container mx-auto">
         <div className="row md:gx-5">
-            <Outlet></Outlet>
+          <Outlet></Outlet>
         </div>
     </div>
     <Footer/>
