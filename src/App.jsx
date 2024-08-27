@@ -19,7 +19,7 @@ import WishList from './Components/WishList/WishList';
 import Profile from './Components/Profile/Profile';
 import Checkout from './Components/Checkout/Checkout';
 
-let router= createBrowserRouter([
+let router= createHashRouter([
   {path:'/', element:<Layout/>,  
     children:[    
       {path:'/', element:<ProtectedRoute><Home/></ProtectedRoute>},
