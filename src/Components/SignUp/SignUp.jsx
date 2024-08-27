@@ -102,10 +102,10 @@ export default function SignUp() {
     );
 
     return <>
-        <div className="col-md-6">
+        <div className="col-md-6 py-5">
             <img className='img-fluid' src={signImg} alt="" />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 py-5">
             <h2 className='text-3xl text-black-600'>Create an account</h2>
             <p className='text-xl text-black-600 pt-3'>Enter your details below..</p>
 
