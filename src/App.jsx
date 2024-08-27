@@ -22,7 +22,7 @@ import Checkout from './Components/Checkout/Checkout';
 let router= createBrowserRouter([
   {path:'/', element:<Layout/>,  
     children:[    
-      {path:'/', element:<ProtectedRoute><Home/></ProtectedRoute>},
+      // {path:'/', element:<ProtectedRoute><Home/></ProtectedRoute>},
       {path:'/home', element:<ProtectedRoute><Home/></ProtectedRoute>},
       {path:'/productDetails/:id/:category', element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
       {path:'/viewAllProducts/:limit/:skip', element:<ProtectedRoute><AllProductsPage/></ProtectedRoute>},
