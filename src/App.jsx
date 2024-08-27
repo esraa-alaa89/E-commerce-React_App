@@ -38,9 +38,11 @@ let router= createBrowserRouter([
       {path:'*', element:<NotFound/>},
     ]
   }
-], {
-  basename: "/E-commerce-React_App"
-})
+], 
+// {
+//   basename: "/E-commerce-React_App"
+// }
+)
 
 function App() {
   const {setUserToken}= useContext(UserContext);
