@@ -41,15 +41,15 @@ export default function NavTailwind() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
                             <Nav.Link className='text-black-600 text-lg px-lg-5' href='/'>Home</Nav.Link>
-                            <Nav.Link className='text-black-600 text-lg px-lg-5' href='/home/about'>About</Nav.Link>
-                            <Nav.Link className='text-black-600 text-lg px-lg-5' href='/home/contact'>Contact</Nav.Link>
+                            <Nav.Link className='text-black-600 text-lg px-lg-5' href='/about'>About</Nav.Link>
+                            <Nav.Link className='text-black-600 text-lg px-lg-5' href='/contact'>Contact</Nav.Link>
                         </Nav>
 
                         <Nav className="ms-auto">
                             <Nav.Link>
                                 <input className="form-control me-2" type="search" placeholder="What are you looking for" aria-label="Search"/>
                             </Nav.Link>
-                            <Nav.Link href='/home/wishlist'>
+                            <Nav.Link href='/wishlist'>
                                 <i className="fa-regular fa-heart"></i>
                                 <sup className='text-danger fs-6'>{wishListCounter}</sup>
                             </Nav.Link>
