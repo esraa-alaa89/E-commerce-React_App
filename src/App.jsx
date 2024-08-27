@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import Contact from './Components/Pages/Contact/Contact';
@@ -18,7 +19,7 @@ import WishList from './Components/WishList/WishList';
 import Profile from './Components/Profile/Profile';
 import Checkout from './Components/Checkout/Checkout';
 
-let router= createBrowserRouter([
+let router= createHashRouter([
   {path:'/', element:<Layout/>,  
     children:[    
       {path:'/', element:<ProtectedRoute><Home/></ProtectedRoute>},
