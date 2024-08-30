@@ -65,8 +65,8 @@ export default function Cart() {
   
   return <>
 
-    {!cartProducts.length ? <div className="flex justify-center items-center">
-        <h3 className='text-3xl text-black-900 py-3'>Your cart is empty</h3> 
+    {!cartProducts.length ? <div className="flex justify-center items-center my-5 shadow-md">
+        <h3 className='text-3xl text-black-900 py-5'>Your cart is empty!</h3> 
       </div>: <>
     
       <div className="position-relative overflow-x-auto shadow-md sm:rounded-lg my-10">
