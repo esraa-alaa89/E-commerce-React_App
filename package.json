@@ -1,10 +1,11 @@
 {
   "name": "myproject",
+  "homepage": "https://esraa-alaa89.github.io/E-commerce-React_App",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
